@@ -23,7 +23,8 @@ const int N = 2e6 + 7;
 int n, a[N], temp[N], res = 0;
 
 
-void countAndMergeSort(int left, int right) {
+void countAndMergeSort(int left, int right) 
+{
     if (left >= right) return;
     int mid = (left + right) / 2;
     countAndMergeSort(left, mid);
