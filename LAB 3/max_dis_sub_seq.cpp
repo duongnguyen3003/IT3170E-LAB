@@ -25,17 +25,17 @@ int n, c;
 vector<int> a;
 
 bool check(int dist) {
-    int count = 1;
-    int last_picked_pos = a[0];
+    int cnt = 1;
+    int pos = a[0];
     
     for (int i = 1; i < n; i++) {
-        if (a[i] - last_picked_pos >= dist) {
-            count++;
-            last_picked_pos = a[i];
+        if (a[i] - pos >= dist) {
+            cnt++;
+            pos = a[i];
         }
     }
     
-    return count >= c;
+    return cnt >= c;
 }
 
 int main()
